@@ -14,20 +14,22 @@ export default function SlugPage({ post }) {
       </Head>
 
       <main>
-          <div className="siteHeader">
-            <h1 className="title">
-                {post.title}
-            </h1>
-            <p>✍️  &nbsp;&nbsp;{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;&nbsp;{ new Date(post.date).toLocaleDateString() }</p>
-          </div>
-            <article dangerouslySetInnerHTML={{__html: post.content}}>   
-            </article>
+        <div className="siteHeader">
+          <h1 className="title">{post.title}</h1>
+          <p>
+            ✍️ &nbsp;&nbsp;
+            {`${post.author.node.name}`} | 🗓️
+            &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
+          </p>
+        </div>
+        <article
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        ></article>
       </main>
 
       <Footer></Footer>
-
     </div>
-  )
+  );
 }
 
 
@@ -41,8 +43,7 @@ export async function getStaticProps({ params }){
         uri
         author {
           node {
-            firstName
-            lastName
+            name
           }
         }
       }
@@ -62,9 +63,9 @@ export async function getStaticProps({ params }){
 }
 
 export async function getStaticPaths(){
-    const paths = []
+    const paths = ['/Kombucha']
     return {
         paths,
         fallback: 'blocking'
     }
-}
+} 
