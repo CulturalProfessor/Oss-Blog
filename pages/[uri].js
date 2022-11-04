@@ -63,7 +63,7 @@ export async function getStaticProps({ params }){
 }
 
 export async function getStaticPaths(){
-    const paths = ['/Kombucha']
+    const paths = ['/testpost']
     return {
         paths,
         fallback: 'blocking'

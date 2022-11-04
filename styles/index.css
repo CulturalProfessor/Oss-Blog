@@ -15,14 +15,50 @@ body {
     --eggplant-gradient: linear-gradient(260.85deg,#7e5cef 10.29%,#002838 89.71%);
 }
  h1 {
-     background: var(--eggplant-gradient);
+     background: white;
      background-clip: text;
      -webkit-background-clip: text;
      -moz-background-clip: text;
      -moz-text-fill-color: transparent;
      -webkit-text-fill-color: transparent;
  }
+nav{
+    height: 80px;
+    width: 100%;
+    background: var(--eggplant-gradient);
+}
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a.hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
 .container {
+   background-color: black;
     min-height: 100vh;
     padding: 5rem 0.5rem;
     display: flex;
@@ -33,6 +69,7 @@ body {
 
 main {
     /* padding: 5rem 0; */
+   
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -54,6 +91,7 @@ footer img {
 }
 
 footer a {
+    color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +127,7 @@ a {
 .description {
     line-height: 1.5;
     font-size: 1.5rem;
+    color: white;
 }
 
 .siteHeader {
@@ -107,7 +146,7 @@ a {
 }
 
 article {
-    min-width: 6%;
+    min-width: 66%;
     max-width: 850px;
     font-size: 1.5rem;
 }
