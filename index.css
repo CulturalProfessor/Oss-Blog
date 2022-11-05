@@ -1,12 +1,11 @@
 
 html,
-
 body {
     padding: 0;
     margin: 0;
     font-family: var(--bs-font-sans-serif);
 }
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 * {
     box-sizing: border-box;
     --lapis-shade: #0076dc;
@@ -22,9 +21,6 @@ body {
      -moz-background-clip: text;
      -moz-text-fill-color: transparent;
      -webkit-text-fill-color: transparent;
-     font-family: 'Abril Fatface', cursive;
-
-
  }
 nav{
     height: 80px;
@@ -42,7 +38,6 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 40px;
-   margin-bottom: 100px;
 }
 nav li{
     display: inline-block;
@@ -89,7 +84,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 footer img {
@@ -97,10 +91,10 @@ footer img {
 }
 
 footer a {
+    color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 a {
@@ -121,7 +115,7 @@ a {
 
 .title {
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.15;
     font-size: 4rem;
 }
 
@@ -158,7 +152,7 @@ article {
 }
 
 code {
-    background: #736d6d;
+    background: #fafafa;
     border-radius: 5px;
     padding: 0.75rem;
     font-size: 1.1rem;
@@ -187,7 +181,6 @@ code {
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
     background: var(--lapis-gradient)
-
 }
 
 .card:hover,
@@ -201,8 +194,6 @@ code {
 .card h3 {
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
-    
-    height: 80px;
 }
 
 .card p {
